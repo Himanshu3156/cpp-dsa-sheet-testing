@@ -1,4 +1,4 @@
-'use client';
+3ed'use client';
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -75,9 +75,9 @@ function PrivacyTermsContent() {
           <motion.div
             initial="hidden"
             animate="visible"
-            custom={1}
+            custom={2}
             variants={fadeInUp}
-            className="flex justify-center mb-8"
+            className="transition-colors duration-300 bg-gradient-to-br from-purple-500/5 to-blue-500/5 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl p-8 border border-white/10 dark:border-white/20 shadow-lg"
           >
             <div className="bg-gray-800/50 p-1 rounded-xl border border-white/10">
               <button
@@ -113,8 +113,8 @@ function PrivacyTermsContent() {
           >
             {activeTab === 'privacy' ? (
               <div className="prose prose-gray dark:prose-invert max-w-none">
-                <h2 className="text-2xl font-bold mb-6 text-purple-600 dark:text-purple-400">Privacy Policy</h2>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                <h2 className="text-3xl font-bold mb-6 text-purple-700 dark:text-purple-300">Privacy Policy</h2>
+                <p className="text-gray-800 dark:text-gray-200 mb-4">
                   <strong>Last updated:</strong> {new Date().toLocaleDateString()}
                 </p>
 
@@ -185,7 +185,7 @@ function PrivacyTermsContent() {
               </div>
             ) : (
               <div className="prose prose-gray dark:prose-invert max-w-none">
-                <h2 className="text-2xl font-bold mb-6 text-purple-600 dark:text-purple-400">Terms of Service</h2>
+                <h2 className="text-3xl font-bold mb-6 text-purple-700 dark:text-purple-300">Terms of Service</h2>
                 <p className="text-gray-700 dark:text-gray-300 mb-4">
                   <strong>Last updated:</strong> {new Date().toLocaleDateString()}
                 </p>
